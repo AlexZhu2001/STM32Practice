@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"keyscan\startup_stm32f103xe.o"
+"keyscan\main.o"
+"keyscan\stm32f1xx_it.o"
+"keyscan\stm32f1xx_hal_msp.o"
+"keyscan\stm32f1xx_hal_gpio_ex.o"
+"keyscan\stm32f1xx_hal_tim.o"
+"keyscan\stm32f1xx_hal_tim_ex.o"
+"keyscan\stm32f1xx_hal.o"
+"keyscan\stm32f1xx_hal_rcc.o"
+"keyscan\stm32f1xx_hal_rcc_ex.o"
+"keyscan\stm32f1xx_hal_gpio.o"
+"keyscan\stm32f1xx_hal_dma.o"
+"keyscan\stm32f1xx_hal_cortex.o"
+"keyscan\stm32f1xx_hal_pwr.o"
+"keyscan\stm32f1xx_hal_flash.o"
+"keyscan\stm32f1xx_hal_flash_ex.o"
+"keyscan\stm32f1xx_hal_exti.o"
+"keyscan\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "KeyScan\KeyScan.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "KeyScan.map" -o KeyScan\KeyScan.axf
